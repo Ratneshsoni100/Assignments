@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one {
+    border: 1px solid orange;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: orange;
+    position: relative;
+}
+.navbar {
+ height: 450px;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.navdiv {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    width: 100%;
+   
+    
+}
+.ull {
+    margin-left: 200px;
+    height: 50px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar li {
+    transition: all 1s;
+}
+.ull li:hover {
+    color: orangered;
+    font-size: x-large;
+    transform: translateY(-5px);
+}
+.button {
+    margin-left: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(226, 110, 33);
+    border-radius: 50px;
+}
+.h1navdiv {
+    position: absolute;
+    top: 220px;
+    left: 520px;
+    font-size: xx-large;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: azure;
+}
+.h1navdiv button {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(226, 110, 33);
+    border-radius: 50px;
+}
+.divfooter {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    padding-left: 20px;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+}
+.divfooter>h3:nth-child(2) {
+    margin-left: 290px;
+}
+.divfooter>h3:nth-child(3) {
+    margin-left: 300px;
+}
+.divfooter i {
+    padding-left: 10px;
+}
+.navbar::before {
+    content: " rthwrhrth ";
+    background-image: url(https://media.istockphoto.com/id/486420378/photo/head-is-swimming-on-dance-floor.webp?b=1&s=170667a&w=0&k=20&c=lWqV2KXK9oOKM6QNImZTxIuDmMwR2duGKeCKQysaYHg=);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1.5;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 2s;
+}
+.para {
+    padding: 25px;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+.para::before {
+    content: "  ";
+    background-image: url(https://images.unsplash.com/photo-1583169026785-e5e24b78a25f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnViYmxlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 2s;
+}
+.para h1 {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.para h4 {
+    height: 250px;
+    width: 100vh;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+.para img {
+    position: absolute;
+    top: 20px;
+    left: 630px;
+    height: 400px;
+    width: 100vh;
+    border-radius: 50px;
+}
+
+.iimg {
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    /* background-image: url('https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1315&q=80'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 60px;
+    width: 500px;
+    height: 120px;
+    position: relative;
+    top: 250px;
+    left: 470px;
+    opacity: 1;
+    transition: all 1s;
+
+}
+.iimg:hover {
+    transform: translate(20px);
+    backdrop-filter: blur(10px);
+}
+.iimg h3 {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    font-size: x-large;
+    font-weight: 500;
+    padding-left: 55px;
+    backdrop-filter: blur(1px);
+    opacity: 5;
+    color: white;
+}
+.iimg h3:hover {
+    color: rgb(255, 217, 0);
+}
+.iimg i {
+    margin-left: 50px;
+    margin-top: 29px;
+    height: 50px;
+    padding-top: 600px;
+    padding: 7px;
+    opacity: 5px;
+}
+ .blockone {
+    border: 1px solid black;
+    height: 800px;
+    width: 800px;
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    flex-direction: column-reverse;
+    position: relative; 
+}
+.blocktwo {
+    background-image: url("https://templatemo.com/templates/templatemo_583_festava_live/images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-left: 250px;
+    height: 700px;
+    width: 400px;
+    border-radius: 70px;
+    position: relative;
+}
+
+.ss {
+    padding: 10px;
+    background-color: rgb(250, 250, 178, 0.52);
+    border-radius: 50px;
+    height: 180px;
+    width: 400px;
+    position: absolute;
+    top: 600px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s linear;
+}
+.blocktwo:hover .ss {
+    top: 70%;
+    opacity: 1;
+    visibility: visible;
+}
+.underblock {
+   
+    height: 300px;
+    width: 400px;
+    border-radius: 70px;
+    margin: 25px;
+    position: absolute;
+    top: 1370px;
+    left: 650px;
+}
+.underblock img {
+    height: 300px;
+    width: 400px;
+    border-radius: 70px;
+}
+.uunderblock {
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 400px;
+    border-radius: 70px;
+    margin: 25px;
+    position: absolute;
+    top: 985px;
+    left: 650px;
+}
+.uunderblock img {
+    height: 300px;
+    width: 400px;
+    border-radius: 70px;
+}
+.underblock:hover .sss {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.sss {
+    background-color: rgb(250, 250, 178, 0.52);
+    border-radius: 50px;
+    height: 140px;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s linear;
+}
+
+.ssss {
+    background-color: rgb(250, 250, 178, 0.52);
+    border-radius: 50px;
+    height: 140px;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s linear;
+}
+.uunderblock:hover .ssss {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.cal {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url(https://media.istockphoto.com/id/1405389537/photo/multiracial-male-and-female-friends-dancing-on-the-beach-during-sunset.webp?b=1&s=170667a&w=0&k=20&c=2egDDN191-_uHuDB800CuOpUerN5MA3l6HNR5W6N23M=);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 40px;
+    margin: 20px;
+    margin-left: 90px;
+    height: 600px;
+    width: 1100px;
+    align-items: center;
+}
+
+.grid {
+    margin-left: 10px;
+    margin-top: 50px;
+ display: grid;
+    grid-template-areas: "head head head head" "side side side side " 
+    "foot foot foot foot";
+    justify-content: center;
+    gap: 2px;
+}
+
+ .grid div {
+    border: 1px solid blue;
+    height: 110px;
+    width: 180px ;
+    background-color: aliceblue;
+} 
+.onne{
+    color: azure;
+    background-color: orange;
+    border-top-left-radius: 15px;
+    border: 1px solid wheat;
+}
+.onee{
+    color: azure;
+    height: 50px;
+    background-color: orange;
+    width: 270px;
+}
+.nee{
+    color: azure;
+    height: 50px;
+    background-color: orange;
+    width: 260px;
+    border-top-right-radius: 20px;
+}
+.on{
+    color: azure;
+    height: 50px;
+    width: 180px ;
+    background-color: orange;
+}
+.os{
+    height: 110px;
+    width: 80px;
+    color: azure;
+    background-color: black;
+}
+.wed{
+    color: aliceblue;
+    height: 110px;
+    width: 270px;
+    font-size: smaller;
+    background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+}
+.wedd{
+    height: 110px;
+    width: 270px;
+    font-size: smaller;
+    background-color: rgb(126, 160, 126);
+}
+.weddd{
+    height: 110px;
+    width: 270px;
+    font-size: smaller;
+    background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+    color: rgb(207, 232, 253);
+}
+.rr{
+    color: aliceblue;
+    height: 110px;
+    width: 260px;
+    font-size: smaller;
+    background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+}
+.r{
+    height: 110px;
+    width: 260px;
+    background-color: pink;
+}
+.sr{
+    height: 110px;
+    width: 260px;
+    background-color: rgb(206, 230, 250);
+}
+.main{
+    padding: 200px;
+     display: flex;
+     flex-direction: row;  
+    /* text-align: center; */
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 250px;
+    background-color: rgba(208, 241, 241, 0.24);
+    justify-content: space-between;
+    align-items: center;
+}
+.man{
+    margin-top: 50px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+}
+.con{
+    padding: 20px;
+    padding-left: 50px;
+    font-size: small;
+    border: 15px  dotted grey;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+}
+.save{
+    color: aliceblue;
+    border: 1px solid orangered;
+    height: 90px;
+    width: 90px;
+    background-color: orangered;
+    border-radius: 100%;
+    position: relative;
+    top: -180px;
+    left: 220px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.for{
+    height: 450px;
+    width: 550px;
+    margin-left:350px ;
+    border-radius: 20px;
+    background-color: rgba(250, 235, 215, 0.226);
+    box-shadow: 10px 8px 8px 5px gray;
+}
+.ff{
+    height: 300px;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-top: 0px;
+  padding-left: 60px;
+  padding-bottom: 20px;
+}
+.ff input{
+    margin: 5px;
+    background-color: rgba(247, 206, 212, 0.185);
+    border: 1ps solid white;
+    border-radius: 20px;
+    padding: 10px;
+    /* width: 250px; */
+}
+.ff textarea{
+    color: rgba(240, 248, 255, 0.658);
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 5px;
+    background-color: rgba(247, 206, 212, 0.315);
+    border: 1ps solid white;
+    border-radius: 20px;
+}
+.ff button{
+    color: aliceblue;
+    font-size: medium;
+    font-weight: 700;
+    height: 50px;
+    width: 120px;
+    margin-left: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(247, 94, 6);
+}
+.ff button:hover{
+    background-color: red;
+}
+.table{
+    margin-top: 80px;
+    height: 500px;
+    /* border: 2px solid black; */
+    position: relative;
+    
+}
+.tr{
+    color: azure;
+    font-size: x-large;
+    font-weight: bold;
+    border: 1px solid orangered;
+    height: 100px;
+    width:100% ;
+    background-color: orangered;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.i{
+    padding: 20px;
+    margin-right: 100px;
+    display: inline;
+    justify-content: space-between;
+    gap: 20px;
+}
+.i:hover{
+    transform: scale(2);
+
+}
+.trr{
+    border: 1px solid black;
+    height: 220px;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 50px;
+    padding-left: 5px;
+    
+}
+.trr ul{
+    margin-top: 20px;
+    list-style: none;
+    height: 200px;
+    width: 200px;
+    display: flex;
+   column-gap: 25px;
+}
+.rrt{
+    border: 1px solid black;
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    top: 110px;
+    left: 500px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+}
+.rrtt{
+    border: 1px solid black;
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    top: 110px;
+    left: 900px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+}
+.last{
+    border: 1px solid black;
+    height: 220px;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px;
+}
+.last :nth-child(2){
+    margin-left: 50px;
+   padding-left: 40px;
+   padding: 20px;
+}
+.last :nth-child(3){
+    padding-left: 30px;
+    padding: 25px;
+ }
+@media(min-width:390px) and (max-width:1300px){
+    .navbar {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        width: 100%;
+    }
+    .ull{
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .para {
+        padding: 25px;
+        height: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        backdrop-filter: blur(5px);
+    }
+    .para::before {
+        content: "  ";
+        background-image: url(https://images.unsplash.com/photo-1583169026785-e5e24b78a25f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnViYmxlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60);
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        height: 450px;
+        width: 100%;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+        z-index: -1;
+        overflow: hidden;
+        transition: all 2s;
+    }
+    .blockone{
+        visibility: hidden;
+        display: inline;
+    }
+    .blocktwo {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+}
